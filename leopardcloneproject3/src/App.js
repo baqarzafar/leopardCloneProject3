@@ -5,7 +5,7 @@ import leopard    from "./leoparLogo.png"
 import NavIcon    from "./NavIcon.jpg"
 import { Provider, useDispatch, useSelector } from 'react-redux';
 import { createSlice, configureStore } from '@reduxjs/toolkit'
-
+import "./App.css"
 
 
 let  store = createSlice({
@@ -92,7 +92,7 @@ function Nav(){
        {array.map((data)=>{
            return(
 
-            <div style={{color:"white" , display:"flex" , justifyContent:"start"}}>
+            <div className="mydiv"    style={{color:"white" , display:"flex" , justifyContent:"start"}}>
               <h3>{data}</h3>
             </div>
            )
